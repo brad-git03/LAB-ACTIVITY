@@ -37,3 +37,7 @@
 .type-psychic {
     background-color: #f59;
 }
+
+.body-bg {
+    background-image: url("background-pokemon.jpg")
+}

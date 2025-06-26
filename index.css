@@ -1,5 +1,6 @@
 .bg{
     background-color: #05570b;
+    overflow-x: hidden;
 }
 
 .type-icon {
@@ -44,13 +45,16 @@
 
 .bg-navbar {
     background-color: #18230F;
+    overflow-x: hidden;    
 }
 .bg-darkgreen {
     background-color:#27391C;
+    overflow-x: hidden;    
 }
 
 .bg-lightgreen {
     background-color:#255F38;
+    overflow-x: hidden;    
 }
 
 .pkmn {
@@ -108,4 +112,46 @@
 .card-hover:hover {
     transform: scale(1.10);
     transition: transform 0.3s ease;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* CARD */
+
+/* Ensure flex containers wrap instead of overflowing */
+.trainer-container {
+  flex-wrap: wrap;
+}
+
+/* Prevent horizontal overflow */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;  
+}
+
+/* Optional: cap trainer card width on small screens */
+.trainer-card {
+  width: 100%;
+  max-width: 450px;
+  margin: 1rem auto;
+}
+
+.navbar {
+  position:sticky;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.nav-link-glow {
+  transition: 0.3s ease-in-out;
+}
+
+.nav-link-glow:hover {
+  color: #255F38 !important;
+  text-shadow: 0 0 5px #ffff99, 0 0 10px #ffff99, 0 0 15px #ffff99;
 }

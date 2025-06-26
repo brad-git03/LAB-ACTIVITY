@@ -11,25 +11,25 @@
 </head>
 <body class="bg-darkgreen">
     <!-- NAVIGATION BAR -->
-    <div class="sticky-top">
-        <div class="d-flex p-3 bg-navbar text-light border-5 border-bottom border-warning">
-            <div class="me-auto d-flex justify-content-around">
-                <h1 class="text-success fw-bold p-1">Bulbasaur</h1>
-            </div>
-            <div class="d-flex justify-content-between">
-                <div class="p-3 fw-bold d-none d-md-block">Skills</div>
-                <div class="p-3 fw-bold d-none d-md-block">Evolution</div>
-                <div class="p-3 fw-bold d-none d-md-block">Trainers</div>
+        <div class="overflow-hidden">
+            <div class="d-flex p-3 bg-navbar text-light border-5 border-bottom border-warning overflow-hidden">
+                <div class="me-auto d-flex justify-content-around">
+                    <h1 class="text-success fw-bold p-1">Bulbasaur</h1>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <a href="#skills" class="p-3 fw-bold d-none d-md-block text-light text-decoration-none nav-link-glow">Skills</a>
+                    <a href="#evolution" class="p-3 fw-bold d-none d-md-block text-light text-decoration-none nav-link-glow">Evolution</a>
+                    <a href="#trainers" class="p-3 fw-bold d-none d-md-block text-light text-decoration-none nav-link-glow">Trainers</a>
+                </div>
             </div>
         </div>
-    </div>
     <!-- LANDING PAGE IMAGE 1 -->
     <div class="text-center mb-0 mt-0 rounded-2 bg-darkgreen shadow border-5 border-bottom border-warning my-5">
         <img src="https://images2.alphacoders.com/135/thumb-1920-1351279.png" class="img-fluid" alt="Pokemon Image ">
     </div>
     <!-- Description -->
     <!-- Skills -->
-    <div class="container-fluid p-3 p-lg-5 bg-dark">
+    <div id="skills" class="container-fluid p-3 p-lg-5 bg-dark">
 
         <h3 class="text-center my-1 display-1 fw-bold text-light mb-5">Skills</h3>
 
@@ -39,6 +39,7 @@
             <!-- Vine Whip Card Start -->
             <div class="col-md-2 text-center text-light bg-darkgreen p-3 rounded-2 shadow border-5 border-bottom border-top border-warning my-5 m-md-0 card-hover">
                 <h4 class="my-3">Vine Whip</h4>
+                <img src="./image/vine whip.gif" class="img-fluid p-2" alt="Pokemon Image">                
                 <p>A classic Grass-type physical attack using vines to lash at the opponent. It's one of Bulbasaur's signature early moves</p>
                 <h5>Type</h5>
                     <div class="p-2">           
@@ -50,6 +51,7 @@
             <!-- Leech Seed Card Start -->
             <div class="col-md-2 text-center text-light bg-darkgreen p-3 rounded-2 shadow border-5 border-bottom border-top border-warning my-5 m-md-0 card-hover">
                 <h4 class="my-3">Leech Seed</h4>
+                <img src="./image/leech seed.gif" class="img-fluid p-2" alt="Pokemon Image">
                 <p>Plants a seed on the opponent that saps health each turn, restoring some HP to Bulbasaur. It's great for sustained battles</p>
                 <h5>Type</h5>
                     <div class="p-2">           
@@ -61,6 +63,7 @@
             <!-- Razor Leaf Card Start -->
             <div class="col-md-2 text-center text-light bg-darkgreen p-3 rounded-2 shadow border-5 border-bottom border-top border-warning my-5 m-md-0 card-hover">
                 <h4 class="my-3">Razor Leaf</h4>
+                <img src="./image/razor leaf.gif" class="img-fluid p-2" alt="Pokemon Image">                
                 <p>A stronger Grass-type move that has a higher critical-hit ratio. Bulbasaur uses sharp-edged leaves to strike foes.</p>
                 <h5>Type</h5>
                     <div class="p-2">           
@@ -72,6 +75,7 @@
             <!-- Sleep Powder Card Start -->
             <div class="col-md-2 text-center text-light bg-darkgreen p-3 rounded-2 shadow border-5 border-bottom border-top border-warning my-5 m-md-0 card-hover">
                 <h4 class="my-3">Sleep Powder</h4>
+                <img src="./image/sleep powder.gif" class="img-fluid p-2" alt="Pokemon Image">                
                 <p>A status move that puts the opponent to sleep, giving Bulbasaur a tactical advantage in battles.</p>
                 <h5>Type</h5>
                     <div class="p-2">           
@@ -85,7 +89,7 @@
     </div>
 
     <!-- Evolution with Info Start -->
-    <div class="container-fluid p-3 p-lg-5 border-5">
+    <div id="evolution" class="container-fluid p-3 p-lg-5 border-5">
         <h3 class="text-center display-1 fw-bold text-light mb-5">Evolution</h3>
         <!-- Other Projects Start -->
         <div class="row d-flex justify-content-around">
@@ -158,37 +162,43 @@
         </div>
     </div>
 
-    <!-- Trainers Starts Here-->
-    <div class="row d-flex justify-content-around">
-        <div class="container-fluid p-3 p-lg-12 p-md-5 bg-dark">
-            <h1 class="text-center display-1 fw-bold text-light mb-5">Trainers</h1>
-            <!-- Border for all Trainers starts here -->
-            <div class="d-flex justify-content-around border-5">
-                <div class="bg-darkgreen d-flex p-4 justify-content-center align-items-center flex-column border-5 border-warning rounded-5 shadow">
-                    <div class="d-flex justify-content-center align-items-center flex-column mb-3">
-                        <img src="https://www.serebii.net/pokearth/trainers/hgss/5.png" class="pkmn">
-                        <p class="text-light fw-bold">Picknicker Gina</p>
-                    </div>
-                    <div class="d-flex justify-content-center align-items-center flex-column mb-3">
-                        <img src="https://www.serebii.net/pokearth/trainers/hgss/24.png" class="pkmn">
-                        <p class="text-light fw-bold">Ace Trainer Nick</p>                    
-                    </div>
-                </div>
-                <div class="bg-darkgreen d-flex p-4 justify-content-center align-items-center flex-column border-5 border-warning rounded-5 shadow">
-                    <div class="d-flex justify-content-center align-items-center flex-column mb-3">
-                        <img src="https://www.serebii.net/pokearth/trainers/hgss/20.png" class="pkmn">
-                        <p class="text-light fw-bold">Pokefan Carter</p>                    
-                    </div>
-                    <div class="d-flex justify-content-center align-items-center flex-column mb-3">
-                        <img src="https://www.serebii.net/pokearth/trainers/hgss/25.png" class="pkmn">
-                        <p class="text-light fw-bold">Ace Trainer Megan</p>                    
-                    </div>                                   
-                </div>
-            </div>
+    <div id="trainers" class="container-fluid p-3 bg-dark">
+  <h1 class="text-center display-1 fw-bold text-light mb-5">Trainers</h1>
+  <div class="row justify-content-center gy-4">
+    
+    <!-- Trainer Card 1 -->
+    <div class="col-md-5 col-10">
+      <div class="bg-darkgreen d-flex p-4 justify-content-center align-items-center flex-column border-5 border-warning rounded-5 shadow trainer-card">
+        <div class="mb-3 text-center">
+          <img src="https://www.serebii.net/pokearth/trainers/hgss/5.png" class="pkmn trainer-img mb-2">
+          <p class="text-light fw-bold">Picknicker Gina</p>
         </div>
-    </div>    
-    <!-- Test -->
+        <div class="mb-3 text-center">
+          <img src="https://www.serebii.net/pokearth/trainers/hgss/24.png" class="pkmn trainer-img mb-2">
+          <p class="text-light fw-bold">Ace Trainer Nick</p>
+        </div>
+      </div>
     </div>
+
+    <!-- Trainer Card 2 -->
+    <div class="col-md-5 col-10">
+      <div class="bg-darkgreen d-flex p-4 justify-content-center align-items-center flex-column border-5 border-warning rounded-5 shadow trainer-card">
+        <div class="mb-3 text-center">
+          <img src="https://www.serebii.net/pokearth/trainers/hgss/20.png" class="pkmn trainer-img mb-2">
+          <p class="text-light fw-bold">Pokefan Carter</p>
+        </div>
+        <div class="mb-3 text-center">
+          <img src="https://www.serebii.net/pokearth/trainers/hgss/25.png" class="pkmn trainer-img mb-2">
+          <p class="text-light fw-bold">Ace Trainer Megan</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+    <!-- Test -->
+
     <!-- Evolution with Info End -->
 
 

@@ -42,8 +42,11 @@
     background-image: url("background-pokemon.jpg")
 }
 
+.bg-navbar {
+    background-color: #18230F;
+}
 .bg-darkgreen {
-    background-color:#18230F;
+    background-color:#27391C;
 }
 
 .bg-lightgreen {

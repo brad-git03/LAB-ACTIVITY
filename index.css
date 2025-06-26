@@ -139,3 +139,15 @@ body {
 }
 
 /* CARD */
+
+.nav-bar-gradient {
+    background: linear-gradient(to bottom right, #439b60, #0b411d);
+}
+
+
+.nav-bar-border-glow {
+    box-shadow: 0 0 50px rgb(8, 0, 0), 0 0 10px #35df5a;
+    border-bottom: 3px solid rgb(14, 0, 0);
+    cursor: pointer;
+    z-index: 10;
+}

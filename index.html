@@ -9,27 +9,33 @@
      <link rel="stylesheet" href="./index.css">
     <link rel="shortcut icon" href="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f19a8dbd-b9e4-4ce8-9726-5a1412453ce7/dabh2db-93223ebd-a35d-4e10-a16e-4952defe1152.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2YxOWE4ZGJkLWI5ZTQtNGNlOC05NzI2LTVhMTQxMjQ1M2NlN1wvZGFiaDJkYi05MzIyM2ViZC1hMzVkLTRlMTAtYTE2ZS00OTUyZGVmZTExNTIucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.S7tBZ9oXqC8PJC1cPzeGvY14kjGvzUekN4ZXva08QJE">     
 </head>
+
+
 <body class="bg-darkgreen">
-    <!-- NAVIGATION BAR -->
-        <div class="overflow-hidden">
-            <div class="d-flex p-3 bg-navbar text-light border-5 border-bottom border-warning overflow-hidden">
-                <div class="me-auto d-flex justify-content-around">
-                    <h1 class="text-success fw-bold p-1">Bulbasaur</h1>
-                </div>
-                <div class="d-flex justify-content-between">
-                    <a href="#skills" class="p-3 fw-bold d-none d-md-block text-light text-decoration-none nav-link-glow">Skills</a>
-                    <a href="#evolution" class="p-3 fw-bold d-none d-md-block text-light text-decoration-none nav-link-glow">Evolution</a>
-                    <a href="#trainers" class="p-3 fw-bold d-none d-md-block text-light text-decoration-none nav-link-glow">Trainers</a>
-                </div>
-            </div>
-        </div>
+  <!-- NAVIGATION BAR -->
+<div class="d-flex flex-wrap align-items-center justify-content-between p-3 bg-navbar text-light border-5 border-bottom border-warning sticky-top">
+
+  <!-- Logo -->
+  <div class="d-flex align-items-center">
+    <img src="./image/bulbasaur-icon.png" alt="Bulbasaur Icon" style="width: 110px; height: auto;" class="me-2">
+    <h1 class="text-success fw-bold fs-1 m-0">BULBASAUR</h1>
+  </div>
+
+  <!-- Navigation Links -->
+  <div class="d-flex flex-wrap justify-content-center mt-2 mt-md-0">
+    <a href="#skills" class="fw-bold fs-3 nav-link-custom">Skills</a>
+    <a href="#evolution" class="fw-bold fs-3 nav-link-custom">Evolution</a>
+    <a href="#trainers" class="fw-bold fs-3 nav-link-custom">Trainers</a>
+  </div>
+</div>
+
     <!-- LANDING PAGE IMAGE 1 -->
     <div class="text-center mb-0 mt-0 rounded-2 bg-darkgreen shadow border-5 border-bottom border-warning my-5">
         <img src="https://images2.alphacoders.com/135/thumb-1920-1351279.png" class="img-fluid" alt="Pokemon Image ">
     </div>
     <!-- Description -->
     <!-- Skills -->
-    <div id="skills" class="container-fluid p-3 p-lg-5 bg-dark">
+    <div class="container-fluid p-3 p-lg-5 bg-dark" id="skills">
 
         <h3 class="text-center my-1 display-1 fw-bold text-light mb-5">Skills</h3>
 
@@ -89,7 +95,7 @@
     </div>
 
     <!-- Evolution with Info Start -->
-    <div id="evolution" class="container-fluid p-3 p-lg-5 border-5">
+    <div class="container-fluid p-3 p-lg-5 border-5" id="evolution">
         <h3 class="text-center display-1 fw-bold text-light mb-5">Evolution</h3>
         <!-- Other Projects Start -->
         <div class="row d-flex justify-content-around">
@@ -162,42 +168,49 @@
         </div>
     </div>
 
-    <div id="trainers" class="container-fluid p-3 bg-dark">
+<!-- Trainers Starts Here-->
+<div class="container-fluid p-3 bg-dark" id="trainers">
   <h1 class="text-center display-1 fw-bold text-light mb-5">Trainers</h1>
-  <div class="row justify-content-center gy-4">
+
+  <div class="row justify-content-center g-4">
     
-    <!-- Trainer Card 1 -->
-    <div class="col-md-5 col-10">
-      <div class="bg-darkgreen d-flex p-4 justify-content-center align-items-center flex-column border-5 border-warning rounded-5 shadow trainer-card">
-        <div class="mb-3 text-center">
-          <img src="https://www.serebii.net/pokearth/trainers/hgss/5.png" class="pkmn trainer-img mb-2">
-          <p class="text-light fw-bold">Picknicker Gina</p>
+    <!-- Trainer Card Group 1 -->
+    <div class="col-12 col-md-5 col-lg-4">
+      <div class="bg-darkgreen d-flex flex-column p-4 justify-content-center align-items-center border-5 border-warning rounded-5 shadow h-100">
+        
+        <div class="d-flex justify-content-center align-items-center flex-column mb-3">
+          <img src="https://www.serebii.net/pokearth/trainers/hgss/5.png" class="pkmn img-fluid trainer-img" alt="Picknicker Gina">
+          <p class="text-light fw-bold mt-2">Picknicker Gina</p>
         </div>
-        <div class="mb-3 text-center">
-          <img src="https://www.serebii.net/pokearth/trainers/hgss/24.png" class="pkmn trainer-img mb-2">
-          <p class="text-light fw-bold">Ace Trainer Nick</p>
+        
+        <div class="d-flex justify-content-center align-items-center flex-column">
+          <img src="https://www.serebii.net/pokearth/trainers/hgss/24.png" class="pkmn img-fluid trainer-img" alt="Ace Trainer Nick">
+          <p class="text-light fw-bold mt-2">Ace Trainer Nick</p>
         </div>
+
       </div>
     </div>
 
-    <!-- Trainer Card 2 -->
-    <div class="col-md-5 col-10">
-      <div class="bg-darkgreen d-flex p-4 justify-content-center align-items-center flex-column border-5 border-warning rounded-5 shadow trainer-card">
-        <div class="mb-3 text-center">
-          <img src="https://www.serebii.net/pokearth/trainers/hgss/20.png" class="pkmn trainer-img mb-2">
-          <p class="text-light fw-bold">Pokefan Carter</p>
+    <!-- Trainer Card Group 2 -->
+    <div class="col-12 col-md-5 col-lg-4">
+      <div class="bg-darkgreen d-flex flex-column p-4 justify-content-center align-items-center border-5 border-warning rounded-5 shadow h-100">
+        
+        <div class="d-flex justify-content-center align-items-center flex-column mb-3">
+          <img src="https://www.serebii.net/pokearth/trainers/hgss/20.png" class="pkmn img-fluid trainer-img" alt="Pokefan Carter">
+          <p class="text-light fw-bold mt-2">Pokefan Carter</p>
         </div>
-        <div class="mb-3 text-center">
-          <img src="https://www.serebii.net/pokearth/trainers/hgss/25.png" class="pkmn trainer-img mb-2">
-          <p class="text-light fw-bold">Ace Trainer Megan</p>
+        
+        <div class="d-flex justify-content-center align-items-center flex-column">
+          <img src="https://www.serebii.net/pokearth/trainers/hgss/25.png" class="pkmn img-fluid trainer-img" alt="Ace Trainer Megan">
+          <p class="text-light fw-bold mt-2">Ace Trainer Megan</p>
         </div>
+
       </div>
     </div>
 
   </div>
 </div>
-
-    <!-- Test -->
+<!-- Trainers End -->
 
     <!-- Evolution with Info End -->
 
